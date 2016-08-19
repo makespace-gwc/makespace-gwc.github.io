@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    </head>
+
+    <body>
+        <h1>Library page</h1>
+		<div>
+			<img src="envying_jas.jpg">
+			<img src="jen.jpg">
+			<img src="2.png">
+		</div>
+		
+    </body>
+        <script>
+		var l = document.getElementsByClassName("gifs-responsive");
+		for (var i = 0; i < l.length; i++) {
+			l[i].addEventListener("click", add);
+		}
+		
+		function add(){
+			var n = this.src;
+			localStorage.setItem(n,n);
+			alert("Image added");
+			}
+        </script>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		
+    </head>
+
+    <body>
+        <h1>Main page</h1>
+		<div id="images"></div>
+		<a href="b.html"><button>Images library</button></a>
+		<button onclick="clearImg()">Clear local storage</button>
+		
+		
+    </body>
+        <script>
+			localStorage.basic = "me.jpg";
+			var a = 0;
+			for (var x in localStorage) {
+				if (a >= localStorage.length) {
+					break;
+				}
+				a++;
+				var i = document.createElement("img");
+				i.src = localStorage.getItem(x);
+				i.width = "400";
+				i.height = "400";
+				var d = document.getElementById("images");
+				d.appendChild(i);
+				}
+				
+			function clearImg(){
+				for (var x in localStorage) {
+					localStorage.removeItem(x);
+				}
+				}
+				
+        </script>
+			localStorage.basic = "comment";
+			var a = 0;
+			for (var x in localStorage) {
+				if (a >= localStorage.length) {
+					break;
+				}
+				a++;
+				var i = document.createElement("comment");
+				i.src = localStorage.getItem(x);
+				i.width = "400";
+				i.height = "400";
+				var d = document.getElementById("comment");
+				d.appendChild(s);
+				}
+		<script>
+		</script>
+</html>
